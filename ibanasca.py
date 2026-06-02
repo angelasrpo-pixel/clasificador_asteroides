@@ -67,8 +67,6 @@ df_filtrado = df_filtrado[(df_filtrado["H"] >= h_min) & (df_filtrado["H"] <= h_m
 
 st.sidebar.markdown(f"**{len(df_filtrado):,} asteroides** con estos filtros")
 
-
-
 tab1, tab2, tab3 = st.tabs(["📋 Catálogo", "🗺️ Mapas", "🔍 Ficha"])
 
 with tab1:
@@ -87,5 +85,4 @@ with tab1:
         use_container_width = True,
         height              = 500
     )
-
 
