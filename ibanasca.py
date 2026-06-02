@@ -52,7 +52,7 @@ h_min, h_max = st.sidebar.slider(
     "Rango de magnitud H",
     min_value=df["H"].min(),
     max_value=df["H"].max(),
-    value=(float(df["H"].min(), df["H"].max()), 25.0)
+    value=(float(df["H"].min()), 25.0)
 )
 
 df_filtrado = df.copy()
