@@ -24,7 +24,7 @@ def cargar_datos():
         "sb-group": "neo",
 
     }
-    r = request.get(url, params=params, timeout=60)
+    r = requests.get(url, params=params, timeout=60)
     df = pd.DataFrame(r.json()["data"], columns=r.json()["fields"])
 
     for col in ["H", "albedo", "diameter", "moid", "e", "a", "i"]:
