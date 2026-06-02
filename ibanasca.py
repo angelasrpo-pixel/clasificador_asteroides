@@ -49,7 +49,7 @@ clase_sel = st.sidebar.selectbox("Clase orbital", clases)
 solo_pha = st.sidebar.checkbox("Solo PHAs")
 
 h_min, h_max = st.sidebar.slider(
-    "Rango de magnitud H"
+    "Rango de magnitud H",
     min_value=df["H"].min(),
     max_value=df["H"].max(),
     value=(float(df["H"].min()), 25.0)
